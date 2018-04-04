@@ -31,19 +31,16 @@ class PorkyCard extends Component {
             />
           ) : (
             <View>
-              { porky.id !== 0 ? (
-                <PorkyCardItem
-                  favouritePorkyId={ favouritePorkyId }
-                  onFavoritePorky={ onFavoritePorky }
-                  porky={ porky }
-                  onPress={ onPress }
-                />
-              ) : (
-                <NewPorkyCardItem />
-              )}
+              <PorkyCardItem
+                favouritePorkyId={ favouritePorkyId }
+                onFavoritePorky={ onFavoritePorky }
+                porky={ porky }
+                onPress={ onPress }
+              />
             </View>
           )}
         </Card>
+        {/* <NewPorkyCardItem /> */}
       </Content>
     );
   }
